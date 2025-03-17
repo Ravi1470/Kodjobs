@@ -43,26 +43,26 @@ export default function Signup() {
             required
           />
           <input
-            type="password"
-            placeholder="Password"
-            className="w-full p-3 bg-zinc-800/70 text-gray-200 placeholder-gray-400 rounded-lg border border-gray-700 focus:ring-2 focus:ring-gray-500 focus:outline-none"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-            required
-          />
-          <input
-            type="date"
-            className="w-full p-3 bg-zinc-800/70 text-gray-200 rounded-lg border border-gray-700 focus:ring-2 focus:ring-gray-500 focus:outline-none"
-            value={dob}
-            onChange={(e) => setDob(e.target.value)}
-            required
-          />
-          <input
             type="email"
             placeholder="Email"
             className="w-full p-3 bg-zinc-800/70 text-gray-200 placeholder-gray-400 rounded-lg border border-gray-700 focus:ring-2 focus:ring-gray-500 focus:outline-none"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
+            required
+          />
+            <input
+              type="date"
+              className="w-full p-3 bg-zinc-800/70 text-gray-200 rounded-lg border border-gray-700 focus:ring-2 focus:ring-gray-500 focus:outline-none"
+              value={dob}
+              onChange={(e) => setDob(e.target.value)}
+              required
+            />
+          <input
+            type="password"
+            placeholder="Password"
+            className="w-full p-3 bg-zinc-800/70 text-gray-200 placeholder-gray-400 rounded-lg border border-gray-700 focus:ring-2 focus:ring-gray-500 focus:outline-none"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
             required
           />
           <button
